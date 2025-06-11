@@ -140,7 +140,7 @@ def show_mypage():
         for i, record in enumerate(st.session_state.history):
             st.markdown(f"#### 배터리 {i+1} - `{record['serial']}`")
             st.write(f"- SoH: `{record['soh']}%`, SoC: `{record['soc']}%`")
-            st.image(record["img"], caption="C-mode Image", use_column_width=True)
+            st.image(record["img"], caption="C-mode Image", use_container_width=True)
 
 # ---------------------------
 # 페이지 라우팅
